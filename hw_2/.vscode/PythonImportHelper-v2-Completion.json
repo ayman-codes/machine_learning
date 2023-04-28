@@ -1,0 +1,82 @@
+[
+    {
+        "label": "contractions",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "contractions",
+        "description": "contractions",
+        "detail": "contractions",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "clean",
+        "importPath": "cleantext",
+        "description": "cleantext",
+        "isExtraImport": true,
+        "detail": "cleantext",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "no_ids",
+        "kind": 5,
+        "importPath": "archive.no",
+        "description": "archive.no",
+        "peekOfCode": "no_ids = {\n  \"items\": [\n    {\n      \"track\": {\n        \"id\": \"4pFC6tuWErxbO61oFFq3BQ\",\n        \"name\": \"Hammer Smashed Face\"\n      }\n    },\n    {\n      \"track\": {",
+        "detail": "archive.no",
+        "documentation": {}
+    },
+    {
+        "label": "yes_ids",
+        "kind": 5,
+        "importPath": "archive.yes",
+        "description": "archive.yes",
+        "peekOfCode": "yes_ids = {\n  \"items\" : [ {\n    \"track\" : {\n      \"id\" : \"55mcupbf7cIsuCEVAuTJVk\",\n      \"name\" : \"OVGTC - Star Wars remix\"\n    }\n  }, {\n    \"track\" : {\n      \"id\" : \"57RtLWT7IpugV0yi5bsxJk\",\n      \"name\" : \"Rêves de môme\"",
+        "detail": "archive.yes",
+        "documentation": {}
+    },
+    {
+        "label": "Preprocessing_token",
+        "kind": 6,
+        "importPath": "preprocessing",
+        "description": "preprocessing",
+        "peekOfCode": "class Preprocessing_token():\n    def __init__(self, token):\n        self.token =token\n    # returns the expanded version of contractions\n    def remove_contractions(self, token):\n        token = contractions.fix(token.lower())\n        return token\n    #convert all words to lower case\n    def remove_uppercase(self, token):\n        token = token.lower()",
+        "detail": "preprocessing",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,13 @@
+Samples,Patrons,Type,Hungry,Decision-label
+x1,some,Burger,yes,no
+x2,full,Thai,yes,yes
+x3,some,Burger,no,yes
+x4,full,Thai,yes,yes
+x5,some,French,no,no
+x6,full,Italian,yes,yes
+x7,none,French,no,no
+x8,some,Thai,yes,no
+x9,none,Burger,no,yes
+x10,full,Italian,no,no
+x11,none,Thai,no,no
+x12,full,Burger,yes,yes

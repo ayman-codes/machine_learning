@@ -1,0 +1,56 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "print_board",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def print_board(board):\n    print(\"Current board:\")\n    for i, stones in enumerate(board):\n        print(f\"Pile {i+1}: {'*' * stones}\")\ndef get_player_move(player, board):\n    while True:\n        pile = int(input(f\"Player {player}, choose a pile (1-5): \"))\n        if pile < 1 or pile > 5 or not board[pile-1]:\n            print(\"Invalid choice. Try again.\")\n            continue",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "get_player_move",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def get_player_move(player, board):\n    while True:\n        pile = int(input(f\"Player {player}, choose a pile (1-5): \"))\n        if pile < 1 or pile > 5 or not board[pile-1]:\n            print(\"Invalid choice. Try again.\")\n            continue\n        stones = int(input(f\"Player {player}, choose stones to remove from pile {pile}: \"))\n        if stones < 1 or stones > board[pile-1]:\n            print(\"Invalid choice. Try again.\")\n            continue",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "get_computer_move",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def get_computer_move(board):\n    pile = -1\n    stones = -1\n    for p in range(5):\n        for s in range(board[p], 0, -1):\n            temp_board = board.copy()\n            temp_board[p] -= s\n            if nim_sum(temp_board) == 0:\n                pile = p + 1\n                stones = s",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "nim_sum",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def nim_sum(board):\n    return board[0] ^ board[1] ^ board[2] ^ board[3] ^ board[4]\ndef play_game():\n    print(\"Welcome to NIM!\")\n    mode = input(\"Select mode (a) multiplayer mode or b) computer mode): \")\n    if mode == \"a\":\n        player1 = 1\n        player2 = 2\n    elif mode == \"b\":\n        player1 = 1",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "play_game",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def play_game():\n    print(\"Welcome to NIM!\")\n    mode = input(\"Select mode (a) multiplayer mode or b) computer mode): \")\n    if mode == \"a\":\n        player1 = 1\n        player2 = 2\n    elif mode == \"b\":\n        player1 = 1\n        player2 = \"Computer\"\n    else:",
+        "detail": "test",
+        "documentation": {}
+    }
+]
