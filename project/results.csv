@@ -1,0 +1,20 @@
+Model,Accuracy
+GradientBoost,0.8488
+Bagging,0.8298
+AdaBoost,0.8256
+SVM,0.8121
+Random Forest,0.8051
+Voting Classifier,0.8009
+GradientBoost_tuned,0.7984
+Random Forest_tuned,0.7969
+SVM_tuned,0.7959
+LogisticRegression,0.7935
+Extra Trees,0.793
+DecisionTree_tuned,0.7887
+KNearestNeighbours,0.786
+K Neighbours_tuned,0.7859
+AdaBoost_tuned,0.78
+DecisionTree,0.7772
+LogisticRegression_tuned,0.759
+GaussianBayes,0.754
+GaussianBayes_tuned,0.7433
